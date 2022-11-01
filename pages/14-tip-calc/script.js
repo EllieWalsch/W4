@@ -4,6 +4,10 @@
 
 const form = document.querySelector("form");
 
+function calcTotalWithTip(total, tipPct) {
+  return total + total * (tipPct / 100);
+}
+
 function handleSubmit(e) {
   e.preventDefault();
 
